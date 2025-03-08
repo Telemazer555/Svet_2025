@@ -43,4 +43,8 @@ def info():
             print('У ля ля сработало')
             break
 
-info()
+# info()
+
+
+
+

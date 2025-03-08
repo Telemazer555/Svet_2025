@@ -1,6 +1,3 @@
-from platform import machine
-
-
 def info():
     Triathlon = 300
     print(f'Этого маловато для троеборья {Triathlon}')
@@ -45,7 +42,5 @@ def info():
             break
         else:
             print(f"Иди качайся лалка, нужно набить: {rembo}")
-
-
 
 info()
