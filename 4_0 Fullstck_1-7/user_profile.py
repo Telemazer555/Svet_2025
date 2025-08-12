@@ -26,7 +26,7 @@ def info():
                         print("НУЖНЫ ЦИФРЫ!!!")
                         continue
 
-        except ValueError:
+        except    ValueError:
             print("Сума сдурел, циферки пиши, давай всё по новой")
             continue
 
@@ -42,5 +42,6 @@ def info():
             break
         else:
             print(f"Иди качайся лалка, нужно набить: {rembo}")
+
 
 info()

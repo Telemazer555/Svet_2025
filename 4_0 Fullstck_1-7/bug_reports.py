@@ -1,4 +1,5 @@
-bug_reports = ["Ошибка 1 — High","Ошибка 2 — Low","Ошибка 3 — High","Ошибка 4 — Medium","Ошибка 5 — Medium","Ошибка 33 — Low"]
+bug_reports = ["Ошибка 1 — High", "Ошибка 2 — Low", "Ошибка 3 — High", "Ошибка 4 — Medium", "Ошибка 5 — Medium",
+               "Ошибка 33 — Low"]
 print(bug_reports)
 a = input('Какой баг добавить ? ')
 bug_reports.append(a)
