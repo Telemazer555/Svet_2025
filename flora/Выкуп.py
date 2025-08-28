@@ -72,8 +72,8 @@ def url_buyout():
                     'uuid': 'c26c9e46-c58f-4bfe-b80d-31444a65e309',
                 },
             ],
-            'planned_start_date': '2025-08-08T19:51:42+03:00',
-            'planned_complete_date': '2025-08-08T19:59:59+03:00',
+            'planned_start_date': '2025-08-22T19:51:42+03:00',
+            'planned_complete_date': '2025-08-22T19:59:59+03:00',
 
 
         },
@@ -82,10 +82,14 @@ def url_buyout():
     # Придумать метод который будет подтягивать сегодняшнюю дату
     response = requests.post(url,headers=headers,json=json_data,verify = False)
     r = response.json()
-    uuid = (r["sale_worksheet"]["uuid"])
+    pprint.pprint(r)
+    # uuid = (r["sale_worksheet"]["uuid"])
 
-    return uuid
+    # return uuid
+    return r
+
 if __name__ == '__main__':
     print(random_vin.get_vin())
     print('RRRRRRRTTTT321138')
     print(f'{baseurl}{url_buyout()}')
+    print(url_buyout())
