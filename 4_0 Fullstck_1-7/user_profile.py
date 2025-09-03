@@ -1,6 +1,6 @@
 def info():
     Triathlon = 300
-    print(f'Этого маловато для троеборья {Triathlon}')
+    # print(f'Этого маловато для троеборья {Triathlon}')
     while True:
 
         try:
@@ -36,12 +36,13 @@ def info():
         print(f'Тяга:  {Deadlift}')
         print("Общая сумма троеборья:", Triathlon)
 
-        rembo = 1200
+        rembo = 600
         if rembo < Triathlon:
             print('Ну ты точно калгон пьёшь')
             break
         else:
             print(f"Иди качайся лалка, нужно набить: {rembo}")
+            break
 
 
 info()

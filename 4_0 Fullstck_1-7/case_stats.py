@@ -1,4 +1,4 @@
-def test_case():
+def greh_case():
     case = []
     while True:
         add_case = input("Сколько тест-кейсов вы выполнили: ")  # Ввод числа
@@ -16,4 +16,4 @@ def test_case():
         print("Попробуйте улучшить результат.")
 
 
-test_case()
+greh_case()

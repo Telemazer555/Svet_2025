@@ -1,46 +1,42 @@
 def info():
     while True:
-        work = (input("Какая у вас работа ?:"))
+        work = (input("Какая у вас работа, qa или aqa?:"))
         if work == 'qa':
-            print('Вау да ты айтишник')
-
+            break
         elif work == 'aqa':
-            print('Вау да ты автоматизатор')
-
-        elif work == 'aqa':
-            print('Вау да ты автоматизатор')
-
+            break
         else:
             print("Ассалам алейкум брат, мы попали в блок else ...попробуй снова")
+            continue
 
-        age = (input("Сколько лет работаем в QA ?:"))
+    while True:
+        age = (input("0 = джун, 1 = мидл, 3 = синьёр \nСколько лет работаем в QA ?:"))
         if age == '0':
-            print('джун')
-
+            st = 'джун'
+            break
         elif age == "1":
-            print('мидл')
-
+            st = 'мидл'
+            break
         elif age == '3':
-            print('Ну ты синьёр')
-
+            st = 'синьёр'
+            break
         else:
             print("Ассалам алейкум брат, мы попали в блок else ...попробуй снова")
+            continue
 
+    while True:
         param = (input("Что такое переменная?:"))
         if param == 'Именованные ссылки на объекты, которые хранятся в памяти компьютера':
-            print('Вау ну ты и заморочился всё это писать ')
-
+            break
         elif param == "ыыы":
-            print('Ну оч плохо конечно ')
-
-        elif param == 'хз':
-            print('Без комментариев')
-
+            break
+        elif param == 'xz':
+            break
         else:
             print("Ассалам алейкум брат, мы попали в блок else ...попробуй снова")
+            continue
 
-        if param == 'Именованные ссылки на объекты, которые хранятся в памяти компьютера' and age == '3' and work == 'aqa':
-            print('У ля ля сработало')
-            break
+    print(f"Ты работаешь в {work}, уже {age} лет, ну ты наверное {st}, ещё и {param}")
 
-# info()
+
+info()
